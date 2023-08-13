@@ -190,16 +190,14 @@ export const getAllUsers = async (accessToken) => {
     try {
         const headers = {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer${accessToken}`
-        };
+            'Authorization': `Bearer ${accessToken}`
+        }
 
-        const response = await fetch(`${Config.apiUrl}/auth`, {
+        const response = await fetch(`${Config.apiUrl}/auth/`, {
             method: 'GET',
             headers
-        });
-
+        });            
         const data = await response.json();
-        console.log("🚀 ~ file: auth.js:202 ~ getAllUsers ~ data:", data)
         if (response.status === 200) {
             const users = []
             for (const user of data) {
