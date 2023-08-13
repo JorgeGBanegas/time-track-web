@@ -90,7 +90,7 @@ export default {
                 this.isLoading = false;
             } catch (e) {
                 console.error("🚀 ~ file: User.vue:127 ~ initialize ~ e:", e);
-                thiss.showDisplay = true;
+                this.showDisplay = true;
                 this.message = 'Error al cargar los datos';
                 this.typeMessage = 'error';
             }
