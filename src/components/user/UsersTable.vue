@@ -5,14 +5,14 @@
     <v-alert v-if="showDisplay" :value="true" :type="typeMessage" closable @click:close="closeAlert">
         {{ message }}
     </v-alert>
-    <br />
+    <br/>
     <v-data-table :headers="headers" :items="users" :sort-by="[{ key: 'firstName', order: 'asc' }]" class="elevation-1">
         <template v-slot:top>
             <v-toolbar flat>
                 <v-toolbar-title>Listado De Usuarios</v-toolbar-title>
                 <v-divider class="mx-4" inset vertical></v-divider>
                 <v-spacer></v-spacer>
-                <v-btn v-au color="primary" dark class="mb-2" @click="regUser">
+                <v-btn color="primary" dark class="mb-2" @click="regUser">
                     Registrar Usuario
                 </v-btn>
 
