@@ -33,9 +33,6 @@
             <v-icon size="small" class="me-2" @click="goToView(item.raw)">
                 mdi-eye
             </v-icon>
-            <v-icon size="small" class="me-2" @click="showConfirmationDialog(item.raw)">
-                mdi-delete
-            </v-icon>
         </template>
         <template v-slot:no-data>
             No hay datos disponibles
