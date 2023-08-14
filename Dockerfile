@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Comando para iniciar la aplicación en modo de desarrollo cuando se ejecute el contenedor
-CMD [ "npm", "run", "build" ]
+CMD ["npm", "run", "serve", "--", "--host", "0.0.0.0"]
